@@ -476,7 +476,7 @@ section {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/MIAS/hero\ img\ 18-9.png) top center no-repeat;
+  background: url(../img/home/hero\ img\ 18-9.png) top center no-repeat;
   background-size: cover;
 }
 
@@ -666,7 +666,7 @@ section {
 # banner
 --------------------------------------------------------------*/
 .bannerpelada {
-  background-image: url(../img/MIAS/banner\ pelada\ inv.png);
+  background-image: url(../img/home/banner\ pelada\ inv.png);
   background-position: cover;
  padding-top: 580px;
 }
