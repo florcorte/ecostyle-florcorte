@@ -352,11 +352,25 @@
 
 
 <!-- banner section-->
-<section id="bannerpelada" class="bannerpelada">
+<section class="bannerpelada">
+   <div class="container">
+    <div class="row alignEnd">
+      <div class="col-lg-6 d-flex flex-column justify-content-end">
+        <h1 data-aos="fade-up">Nuestra selección a tu medida.</h1>
+        <h2 data-aos="fade-up" data-aos-delay="400">Elegimos las prendas en base a tus gustos y talles ¡Hacé nuestro test de estilo y contanos más sobre vos.</h2>
+        <div data-aos="fade-up" data-aos-delay="600">
+          <div class="text-center text-lg-start">
+            <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
 
-      <h3 class="titulospelada">Nuestra selección a tu medida.</h3>
-          
-      <p>Elegimos las prendas en base a tus gustos y talles ¡Hacé nuestro test de estilo y contanos más sobre vos!</p>
+              <a href="#" class="btn-buy">LLENÁ EL FORMULARIO</a>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="peladaresponsive"></div>
 </section>
 
 
@@ -376,7 +390,7 @@
 
         <div class="row gy-4 centerItems" data-aos="fade-left">
 
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-3 col-md-6 bigBox" data-aos="zoom-in" data-aos-delay="100">
             <div class="box1">
               <h3 style="color: #000000;">30 días</h3>
               
@@ -391,7 +405,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-3 col-md-6 bigBox" data-aos="zoom-in" data-aos-delay="200">
             <div class="box2">
               
               <h3 style="color: #000000;">60 días</h3>
@@ -421,7 +435,7 @@
             </div>
           </div> -->
 
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+          <div class="col-lg-3 col-md-6 bigBox" data-aos="zoom-in" data-aos-delay="400">
             <div class="box3">
               <span class="featured">+ totebag</span>
               <h3 style="color: #000000;">90 días</h3>
@@ -1122,6 +1136,23 @@
 
     </section><!-- End Features Section -->
 
+
+    <!-- ======= foto banner ======= -->
+    <section class="subscriptionBanner">
+      <div class="container">
+             <!-- <h3>Who We Are</h3> -->
+             <h2>titulo del banner</h2>
+             <p>
+              textodelbannerloremipsum etcetec
+             </p>
+ 
+           </div>
+     </div>
+   </section>
+   
+   
+    <!-- End foto banner  -->
+
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq">
 
@@ -1278,41 +1309,49 @@
             </div>
 
           </div> -->
-
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
+          <div class="container" data-aos="fade-up">
+            <div class="row gx-0">
+    
+              <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                <form action="forms/contact.php" method="post" class="php-email-form">
+                  <div class="row gy-4">
+    
+                    <div class="col-md-6">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+    
+                    <div class="col-md-6 ">
+                      <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                    </div>
+    
+                    <div class="col-md-12">
+                      <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                    </div>
+    
+                    <div class="col-md-12">
+                      <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                    </div>
+    
+                    <div class="col-md-12 text-center">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
+    
+                      <button type="submit">Send Message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+    
+              <div class="col-lg-6 d-flex align-items-center contactImg" data-aos="zoom-out" data-aos-delay="200">
                 <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
                   <img src="assets/img/home/chica caja box red sin fondo 1.png" class="img-fluid" alt=""> 
                </div>
               </div>
-            </form>
-
+    
+            </div>
           </div>
+ 
 
         </div>
 

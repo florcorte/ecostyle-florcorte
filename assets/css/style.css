@@ -667,8 +667,17 @@ section {
 --------------------------------------------------------------*/
 .bannerpelada {
   background-image: url(../img/home/banner\ pelada\ inv.png);
-  background-position: cover;
- padding-top: 580px;
+  background-size: cover;
+  background-position: center;
+  height: 633px;
+}
+.peladaresponsive {
+  background-image: url(../img/home/peladaresponsive.PNG);
+  background-size: cover;
+  background-position: center;
+  display: none;
+  height: 336px;
+  width:  100%;
 }
 
 .titulospelada {
@@ -793,6 +802,13 @@ section {
 @media (max-width: 768px) {
   .features .feture-tabs h3 {
     font-size: 28px;
+  }
+
+  .peladaresponsive{
+    display: block;
+  }
+  .bannerpelada{
+    background:  #b9c3bd;
   }
 }
 
@@ -1140,7 +1156,7 @@ section {
   text-decoration: line-through;
 }
 
-.pricing .btn-buy {
+.btn-buy {
   display: inline-block;
   padding: 8px 40px 10px 40px;
   border-radius: 0px;
@@ -1155,7 +1171,7 @@ section {
   border: 3px solid #000000;
 }
 
-.pricing .btn-buy:hover {
+.btn-buy:hover {
   background: #000000;
   color: #ffffff;
 }
@@ -2539,7 +2555,32 @@ section {
   color: #000000;
 }
 
+/*--------------------------------------------------------------
+# foto Banner
+--------------------------------------------------------------*/
 
+.subscriptionBanner {
+  background-image: url(../img/home/banner\ pelada.png);
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #1f6a5d;
+  height: 292px;
+  border-bottom: 1rem solid;
+}
+.subscriptionBanner h2 {
+  font-weight: bold;
+}
+.titulospelada {
+  justify-content: end;
+}
+.contactImg {
+  justify-content: end;
+}
+.bigBox {
+  width: 31.81% !important;
+}
 .centerItems {
 	justify-content: center;
 }
