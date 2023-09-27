@@ -15,16 +15,16 @@
 
 body {
   font-family: "raleway", "Open Sans", sans-serif;
-  color: #444444;
+  color: #000000;
 }
 
 a {
-  color: #4154f1;
+  color: #000000;
   text-decoration: none;
 }
 
 a:hover {
-  color: #717ff5;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -152,6 +152,13 @@ section {
 .back-to-top:hover {
   background: #ffffff;
   color: #000000;
+  border: 2px solid #000000;
+}
+
+.back-to-top i:hover {
+  font-size: 24px;
+  color: #000000;
+  line-height: 0;
 }
 
 .back-to-top.active {
@@ -248,10 +255,11 @@ section {
 }
 
 .navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
+/* .navbar .active,
+.navbar .active:focus, */
 .navbar li:hover>a {
-  color: #252525;
+  color: #000000;
+ text-decoration: underline;
 }
 
 .navbar .getstarted,
@@ -617,29 +625,32 @@ section {
 }
 
 .about h2 {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 700;
   color: #000000;
 }
 
 .about p {
-  margin: 15px 0 30px 0;
-  line-height: 24px;
+  margin: 24px 0 30px 0;
+  line-height: 30px;
+  font-size: 20px;
 }
 
-.about .btn-get-started {
-  border: 1px, #000000;
-}
 
 
 .about .btn-read-more {
   margin-top: 30px;
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 4px;
-  transition: 0.5s;
+  display: inline-block;
+  padding: 10px 40px 10px 40px;
+  border-radius: 0px;
   color: #000000;
-  background: #ffffff;
+  background: #fff;
+  transition: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "raleway", "Nunito", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
   border: 3px solid #000000;
  
 }
@@ -657,8 +668,9 @@ section {
   transition: 0.3s;
 }
 
-.about .btn-read-more:hover i {
-  transform: translateX(5px);
+.about .btn-read-more:hover {
+  background: #000000;
+  color: #ffffff;
 }
 
 
@@ -669,8 +681,24 @@ section {
   background-image: url(../img/home/banner\ pelada\ inv.png);
   background-size: cover;
   background-position: center;
-  height: 633px;
+  height: 709px;
+  padding-top: 10%;
 }
+
+.bannerpelada h1 {
+  font-family: raleway;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 5%;
+}
+
+.bannerpelada p {
+  font-family: raleway;
+  font-size: 24px;
+  margin-bottom: 5%;
+  
+}
+
 .peladaresponsive {
   background-image: url(../img/home/peladaresponsive.PNG);
   background-size: cover;
@@ -687,37 +715,102 @@ section {
 /*--------------------------------------------------------------
 # Values
 --------------------------------------------------------------*/
-.values .box {
+.values .box1 {
   padding: 30px;
   /* box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08); */
-  font-size: 24;
+  font-size: 22px;
   border: 2px solid #ffffff;
   text-align: center;
   transition: 0.3s;
   height: 100%;
 }
 
-.values .box img {
+.values .box2 {
+  padding: 30px;
+  /* box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08); */
+  font-size: 22px;
+  border: 2px solid #ffffff;
+  text-align: center;
+  transition: 0.3s;
+  height: 100%;
+}
+
+.values .box3 {
+  padding: 30px;
+  /* box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08); */
+  font-size: 22px;
+  border: 2px solid #ffffff;
+  text-align: center;
+  transition: 0.3s;
+  height: 100%;
+}
+
+.values .box1 img {
   padding: 30px 50px;
   transition: 0.5s;
   transform: scale(1.1);
 }
 
-.values .box h3 {
+.values .box2 img {
+  padding: 30px 50px;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.values .box3 img {
+  padding: 30px 50px;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.values .box1 h3 {
   font-size: 24px;
   color: #000000;
   font-weight: 700;
   margin-bottom: 18px;
 }
 
-.values .box:hover {
-  /* box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08); */
-  border: 2px solid #000000;
+.values .box2 h3 {
+  font-size: 24px;
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 18px;
 }
 
-.values .box:hover img {
+.values .box3 h3 {
+  font-size: 24px;
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.values .box1:hover {
+  /* box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08); */
+  border: 3px solid #FC4E05;
+}
+
+.values .box2:hover {
+  /* box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08); */
+  border: 3px solid #FFC100;
+}
+
+.values .box3:hover {
+  /* box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08); */
+  border: 3px solid #1A87FC;
+}
+
+.values .box1:hover img {
   transform: scale(1);
 }
+
+.values .box2:hover img {
+  transform: scale(1);
+}
+
+.values .box3:hover img {
+  transform: scale(1);
+}
+
 
 /*--------------------------------------------------------------
 # Counts
@@ -1600,7 +1693,7 @@ section {
 
 .team .member .social a {
   transition: color 0.3s;
-  color: rgba(1, 41, 112, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   margin: 15px 12px;
   display: block;
   line-height: 0;
@@ -1608,7 +1701,7 @@ section {
 }
 
 .team .member .social a:hover {
-  color: rgba(1, 41, 112, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .team .member .social i {
@@ -1623,14 +1716,14 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
-  color: #012970;
+  color: #000000;
 }
 
 .team .member .member-info span {
   display: block;
   font-size: 14px;
   font-weight: 400;
-  color: #aaaaaa;
+  color: #000000;
 }
 
 .team .member .member-info p {
@@ -1638,12 +1731,12 @@ section {
   font-size: 14px;
   padding-top: 15px;
   line-height: 26px;
-  color: #5e5e5e;
+  color: #000000;
 }
 
 .team .member:hover {
   transform: scale(1.08);
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
 }
 
 .team .member:hover .social {
@@ -1749,8 +1842,9 @@ section {
 --------------------------------------------------------------*/
 .contact .info-box {
   color: #000000;
-  background: #fafbff;
+  background: #ffffff;
   padding: 30px;
+  border: 2px solid #000000;
 }
 
 .contact .info-box i {
@@ -1774,7 +1868,7 @@ section {
 }
 
 .contact .php-email-form {
-  background: #fafbff;
+  background: #ffffff;
   padding: 30px;
   height: 100%;
 }
@@ -1824,12 +1918,16 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
+  font-family: raleway;
   border-radius: 0;
+  border-color: #000000;
+  border: 2px solid;
 }
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
   border-color: #000000;
+  border: 3px solid;
 }
 
 .contact .php-email-form input[type=text],
@@ -1841,19 +1939,27 @@ section {
   padding: 12px 15px;
 }
 
+
+
 .contact .php-email-form button[type=submit] {
   margin-top: 30px;
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 4px;
-  transition: 0.5s;
+  display: inline-block;
+  padding: 10px 40px 10px 40px;
+  border-radius: 0px;
   color: #000000;
-  background: #ffffff;
+  background: #fff;
+  transition: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "raleway", "Nunito", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
   border: 3px solid #000000;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #ffffff;
+  background: #000000;
+  color: #ffffff;
 }
 
 @keyframes animate-loading {
@@ -2378,10 +2484,19 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  background: #f6f9ff;
-  padding: 0 0 30px 0;
+  background: #000000;
+  padding: 0 0 20px 0;
   font-size: 14px;
 }
+
+/* .footer i {
+  color: #fff;
+}
+
+.footer i:hover {
+  color: #000000;
+} */
+
 
 .footer .footer-newsletter {
   padding: 50px 0;
@@ -2481,7 +2596,7 @@ section {
 .footer .footer-top .social-links a {
   font-size: 20px;
   display: inline-block;
-  color: rgba(1, 41, 112, 0.5);
+  color: rgb(0, 0, 0);
   line-height: 0;
   margin-right: 10px;
   transition: 0.3s;
@@ -2512,7 +2627,7 @@ section {
 
 .footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #000000;
+  color: #ffffff;
   font-size: 12px;
   line-height: 0;
 }
@@ -2545,14 +2660,14 @@ section {
 .footer .copyright {
   text-align: center;
   padding-top: 30px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .footer .credits {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
-  color: #000000;
+  color: #ffffff;
 }
 
 /*--------------------------------------------------------------
@@ -2565,7 +2680,7 @@ section {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #1f6a5d;
+  color: #D5E2D9;
   height: 292px;
   border-bottom: 1rem solid;
 }
