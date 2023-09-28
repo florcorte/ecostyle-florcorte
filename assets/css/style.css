@@ -2755,6 +2755,14 @@ text-decoration: underline;
   width: 31.81% !important;
 }
 
+.subscriptionBanner p {
+  font-size: 24px;
+}
+
+.subscriptionBanner h2 {
+  padding-top: 20px;
+}
+
 @media (max-width: 700px) {
   .subscriptionBanner {
     width: 100%;
@@ -2773,10 +2781,7 @@ text-decoration: underline;
 }
 
 
-.subscriptionBanner {
-  text-align: center;
-  margin-top: 80px;
-}
+
 
 
 
@@ -2784,6 +2789,11 @@ text-decoration: underline;
 @media (max-width: 768px) {
 .subscriptionBanner {
   text-align: center;
+}
+
+.subscriptionBanner {
+  text-align: center;
+  margin-top: 80px;
 }
 
 .subscriptionBanner h2 {

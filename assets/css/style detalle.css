@@ -504,6 +504,13 @@ section {
   font-size: 26px;
 }
 
+.hero .precio {
+  color: #000000;
+  margin: 15px 0 0 0;
+  font-size: 30px;
+  font-weight: 700px;
+}
+
 /* .hero #row {
   justify-content: end;
 } */
