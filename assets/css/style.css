@@ -693,7 +693,7 @@ section {
 /*--------------------------------------------------------------
 # banner
 --------------------------------------------------------------*/
-/* .bannerpelada {
+.bannerpelada {
   background-image: url(../img/home/banner\ pelada\ inv.png);
   background-size: cover;
   background-position: center;
@@ -715,18 +715,64 @@ section {
   
 }
 
-.peladaresponsive {
+/* .peladaresponsive {
   background-image: url(../img/home/peladaresponsive.PNG);
   background-size: cover;
   background-position: center;
   display: none;
   height: 336px;
   width:  100%;
-}
+} */
 
 .titulospelada {
   justify-content: end;
-} */
+}
+
+@media (max-width: 700px) {
+  .bannerpelada {
+    width: 100%;
+    height: 400px;
+    padding: 10px 0px 15px 0px;
+    background: url(../img/home/peladachikita.png) top center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 991px) {
+  .bannerpelada {
+    height: auto;
+    padding: 15px 0 400px 0;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+.bannerpelada {
+  text-align: center;
+}
+
+.bannerpelada {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.bannerpelada h2 {
+  font-size: 32px;
+}
+
+.bannerpelada p {
+  font-size: 24px;
+}
+
+
+}
+
+
 
 /*--------------------------------------------------------------
 # Values
@@ -926,12 +972,7 @@ section {
     font-size: 28px;
   }
 
-  .peladaresponsive{
-    display: block;
-  }
-  .bannerpelada{
-    background:  #b9c3bd;
-  }
+
 }
 
 .features .feture-tabs .nav-pills {
